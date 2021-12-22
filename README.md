@@ -1,6 +1,10 @@
-# Scraper agregátorů antikvariátů
+# Nahraj seznam knih, dostaň zpátky kde jsou nejlevněji
+## Ulovknihu.cz a Databázeknih.cz – scraper
 
-Funguje pro ulovknihu.cz
+**Use case**: Potřebuji najít nejnižší cenu pro knihy z mého seznamu knih, které chci přečíst.
 
-Postup:
+**Domněnka**: Někdo chce zjitit, jaké antikvariáty/bazar databazeknih.cz mají knihu, kterou chci. Tu knihu pak chci najít za nejnižší cenu. Na konci chci seznam, abych mohl filtrovat a řadit.
+
+
+## Postup
 - stáhnout excel Chystám se číst knih na databazeknih.cz
