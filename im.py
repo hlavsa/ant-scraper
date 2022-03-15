@@ -3,7 +3,7 @@ from random import randint
 from time import sleep
 from openpyxl import load_workbook
 
-import requests, json, openpyxl, urllib
+import requests, json, openpyxl, urllib, os
 import pandas as pd
 
 headers = {
@@ -15,9 +15,13 @@ headers = {
     }
 
 # Load excel, delete NaNs, save excel
-df = pd.read_excel('335319.xlsx') 
-df.dropna(inplace=True)
-df.to_excel('prefinal.xlsx')
+for root, dirs, files in os.walk(os.getcwd()):
+    for file in files:
+        if file.endswith('.xlsx'):
+            print(file)
+            df = pd.read_excel(file) 
+            df.dropna(inplace=True)
+            df.to_excel('prefinal.xlsx')
 
 # load excel, delete rows n cols, save excel
 wb = load_workbook('prefinal.xlsx')
@@ -105,6 +109,3 @@ def get_organic_results():
 
 get_organic_results()
 excel.save('seznam_knih.xlsx')
-
-
-
