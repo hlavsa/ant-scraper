@@ -1,5 +1,5 @@
 # Nahraj seznam knih, dostaň zpátky kde jsou nejlevněji
-## Ulovknihu.cz a Databázeknih.cz – scraper
+## Ulovknihu.cz a Databázeknih.cz – scrapper
 
 **Use case**: Potřebuji najít nejnižší cenu pro knihy z mého seznamu knih, které chci přečíst.
 
